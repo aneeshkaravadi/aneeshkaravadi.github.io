@@ -1,0 +1,96 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* Change font for body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: var(--gradient, linear-gradient(to right, #ff7e5f, #feb47b));
+    /* Default gradient */
+    animation: fadeIn 2s ease-in-out;
+    transition: background 1s ease-in-out;
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.075);
+    /* Adjust opacity as needed */
+    padding: 20px;
+    border-radius: 10px;
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    animation: fadeIn 2s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+    /* Change font for container */
+  }
+  
+  h1 {
+    font-size: 0.75em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  #quote-container {
+    margin-bottom: 20px;
+  }
+  
+  #english-quote {
+    font-size: 2em;
+    color: #333;
+    font-family: 'Times New Roman', serif;
+    /* Change font for English quote */
+    font-style: italic;
+    /* Italicize the quote */
+  }
+  
+  #author {
+    font-size: 0.75em;
+    color: #333;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    /* Change font for author */
+  }
+  
+  #citation {
+    font-size: 0.75em;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    /* Change font for citation */
+  }
+  
+  #toggle-sanskrit {
+    background-color: #ffffff00;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    /* Change font for toggle button */
+  }
+  
+  #toggle-sanskrit:hover {
+    background-color: #fdfdfd86;
+  }
+  
+  #sanskrit-quote {
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    /* Change font for Sanskrit quote */
+  }
