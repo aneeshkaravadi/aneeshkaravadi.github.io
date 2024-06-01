@@ -10,7 +10,7 @@ body {
     background-position: center;
     animation: fadeIn 2s ease-in-out;
     transition: background 1s ease-in-out;
-    filter: brightness(0.7) saturate(1.5); /* Adjust brightness and saturation */
+    filter: brightness(0.1) saturate(1.5); /* Adjust brightness and saturation */
 }
 
 @keyframes fadeIn {
