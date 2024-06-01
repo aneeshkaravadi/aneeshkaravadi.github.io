@@ -10,6 +10,7 @@ body {
     background-position: center;
     animation: fadeIn 2s ease-in-out;
     transition: background 1s ease-in-out;
+    filter: blur(5px); /* Adjust the blur radius as needed */
 }
 
 @keyframes fadeIn {
@@ -21,20 +22,7 @@ body {
     }
 }
 
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-    z-index: 1;
-}
-
 .container {
-    position: relative;
-    z-index: 2;
     text-align: center;
     background: rgba(255, 255, 255, 0.25);
     padding: 20px;
@@ -55,8 +43,7 @@ h1, #quote-container, #english-quote, #author, #citation, #toggle-sanskrit, #san
 h1 {
     font-size: 0.75em;
     margin-bottom: 20px;
-    color: #fff; /* Change text color to white */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+    color: #333;
 }
 
 #quote-container {
@@ -65,16 +52,22 @@ h1 {
 
 #english-quote {
     font-size: 2em;
-    color: #fff; /* Change text color to white */
+    color: #333;
     font-family: 'Times New Roman', serif;
     font-style: italic;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
 }
 
-#author, #citation, #toggle-sanskrit, #sanskrit-quote {
+#author {
     font-size: 0.75em;
-    color: #fff; /* Change text color to white */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+    color: #333;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#citation, #toggle-sanskrit, #sanskrit-quote {
+    font-size: 0.75em;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #toggle-sanskrit {
@@ -93,7 +86,7 @@ h1 {
 
 #sanskrit-quote {
     font-size: 1.1em;
-    color: #fff; /* Change text color to white */
+    color: #333;
     margin-top: 20px;
     font-family: 'Montserrat', sans-serif;
 }
