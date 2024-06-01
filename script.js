@@ -1,8 +1,10 @@
-const images = [
-    "path/to/image1.jpg",
-    "path/to/image2.jpg",
-    "path/to/image3.jpg",
-    // Add more image paths here
+const gradients = [
+    "linear-gradient(to right, #ff7e5f, #feb47b)",
+    "linear-gradient(to right, #43cea2, #185a9d)",
+    "linear-gradient(to right, #ff512f, #dd2476)",
+    "linear-gradient(to right, #6a11cb, #2575fc)",
+    "linear-gradient(to right, #e65c00, #f9d423)",
+    // Add more gradients here
 ];
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -11,15 +13,17 @@ document.addEventListener("DOMContentLoaded", function() {
     const citationElement = document.getElementById("citation");
     const authorElement = document.getElementById("author");
     const toggleButton = document.getElementById("toggle-sanskrit");
-
-    document.body.style.backgroundImage = `url(${images[Math.floor(Math.random() * images.length)]})`;
+    document.documentElement.style.setProperty(
+        "--gradient",
+        gradients[Math.floor(Math.random() * gradients.length)]
+    );
 
     // Fetch quotes from quotes.json
     fetch("quotes.json")
         .then((response) => response.json())
         .then((data) => {
             const originalQuotes = data; // Store fetched quotes
-            let quotes = [...originalQuotes]; // Make a copy for shuffling
+            const quotes = [...originalQuotes]; // Make a copy for shuffling
 
             // Function to shuffle the quotes array randomly
             function shuffleArray(array) {
