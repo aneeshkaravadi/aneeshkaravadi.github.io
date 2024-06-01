@@ -1,6 +1,22 @@
 const images = [
     "hinduImages/14615.jpg",
-    "hinduImages/21963.jpg"
+    "hinduImages/21963.jpg",
+    "hinduImages/475892.jpg",
+    "hinduImages/504993.jpg",
+    "hinduImages/504996.jpg",
+    "hinduImages/504997.jpg",
+    "hinduImages/505003.jpg",
+    "hinduImages/505004.jpg",
+    "hinduImages/505005.jpg",
+    "hinduImages/505007.jpg",
+    "hinduImages/505008.jpg",
+    "hinduImages/505010.jpg",
+    "hinduImages/505015.jpg",
+    "hinduImages/505017.jpg",
+    "hinduImages/505018.jpg",
+    "hinduImages/505021.jpg",
+    "hinduImages/505061.jpg",
+    "hinduImages/505065.jpg"
 ];
 
 document.addEventListener("DOMContentLoaded", function() {
